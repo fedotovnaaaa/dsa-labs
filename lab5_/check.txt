@@ -1,0 +1,14 @@
+Чек-лист
+
+Позитивное тестирование:
+5, 5, 5          --> "equilateral"
+5, 5, 6          --> "isosceles"
+3, 4, 5          --> "nonequilateral"
+3.0, 4.0, 5.0    --> "nonequilateral"
+
+Негативное тестирование (некорректные данные):
+1, 2, 3          --> IncorrectTriangleSides (нарушение неравенства треугольника)
+-1, 2, 3         --> IncorrectTriangleSides (отрицательная длина)
+0, 1, 2          --> IncorrectTriangleSides (нулевая длина)
+1, 1, 0          --> IncorrectTriangleSides
+"a", 1, 2        --> IncorrectTriangleSides (некорректный тип данных)
